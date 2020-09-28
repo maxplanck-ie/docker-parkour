@@ -10,8 +10,10 @@ services:
       - 8888:8888     # Jupyter
     expose:
       - 8000          # Django
-    environment:
-      - DATABASE_URL=postgres://postgres:postgres@postgres:5432/postgres
+    env_file:
+      # environment variables are set in parkour.env 
+      # or explictly with docker-compose --file my.env ...
+      - ./parkour.env
     volumes:
       - usr_src_app_media:/usr/src/app/media
       - usr_src_app_staticfiles:/usr/src/app/staticfiles
