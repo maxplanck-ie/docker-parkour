@@ -1,3 +1,6 @@
+Moved to: https://github.com/maxplanck-ie/parkour2
+
+<!--
 # Parkour Docker Image
 
 Docker container for easy deployment of the [Parkour](https://github.com/maxplanck-ie/parkour).
@@ -72,3 +75,4 @@ or:
 ```
 docker-compose logs --tail 100 parkour-web
 ```
+-->
